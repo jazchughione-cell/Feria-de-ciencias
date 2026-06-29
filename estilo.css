@@ -1,0 +1,211 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(to bottom, #d6f0ff, #dff4ff);
+    color:#2c3e50;
+    line-height:1.8;
+}
+
+/* ---------------- HEADER ---------------- */
+
+header{
+    background:linear-gradient(135deg,#7ec8ff,#3b82f6);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+h1{
+    font-size:3rem;
+    margin-bottom:15px;
+    letter-spacing:1px;
+}
+
+h2{
+    color:#1e5aa8;
+    text-align:center;
+    margin:40px 0 20px;
+    font-size:2rem;
+}
+
+/* ---------------- NAV ---------------- */
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:rgb(54, 47, 189);
+    font-weight:600;
+    padding:10px 18px;
+    border-radius:30px;
+    background:rgba(255,255,255,0.20);
+    border:2px solid rgba(255,255,255,0.5);
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:white;
+    color:#1e5aa8;
+    border-color:rgb(255, 255, 255);
+    transform:translateY(-3px);
+}
+
+/* ---------------- MAIN ---------------- */
+
+main{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 30px;
+}
+
+/* ---------------- PÁRRAFOS ---------------- */
+
+p{
+    text-align:center;
+    max-width:950px;
+    margin:20px auto;
+    font-size:1.1rem;
+}
+
+/* ---------------- IMÁGENES ---------------- */
+
+img{
+    display:block;
+    margin:30px auto;
+    width:80%;
+    max-width:700px;
+    border-radius:15px;
+    box-shadow:0 6px 20px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+img:hover{
+    transform:scale(1.03);
+}
+
+/* ---------------- SECCIONES ---------------- */
+
+section{
+    background:white;
+    padding:30px;
+    margin:40px 0;
+    border-radius:18px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer{
+    background:#1e5aa8;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+    font-size:.95rem;
+}
+
+/* ---------------- SCROLL ---------------- */
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media(max-width:768px){
+
+    h1{
+        font-size:2.2rem;
+    }
+
+    h2{
+        font-size:1.7rem;
+    }
+
+    nav{
+        gap:15px;
+    }
+
+    nav a{
+        padding:8px 15px;
+    }
+
+    p{
+        font-size:1rem;
+    }
+
+    img{
+        width:95%;
+    }
+
+}
+
+h3{
+    text-align: center;
+    color: #2b6cb0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 40px auto 25px;
+    position: relative;
+    width: fit-content;
+    padding-bottom: 8px;
+}
+
+h3::after{
+    content: "";
+    display: block;
+    width: 70%;
+    height: 3px;
+    background: linear-gradient(to right, #7ec8ff, #3b82f6);
+    margin: 8px auto 0;
+    border-radius: 5px;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin: 40px auto;
+}
+
+.logo{
+    background: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.12);
+    text-align: center;
+    transition: .3s;
+}
+
+.logo:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(59,130,246,.25);
+}
+
+.logo img{
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.logo h4{
+    color: #1e5aa8;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
